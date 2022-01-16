@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+table, th, td {
+  border:1px solid black;
+  table-layout: fixed ;
+  width: 100% ;
+  text-align: center;
+  background-color: lightblue;
+  font-size: 18px;
+  padding-top: 0;
+  padding-bottom 0;
+  
+ }
+
+</style>
+
+<body>
+
+<h2>Welcome {{Forename}} these are your account details:</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Our Client</th>
+    <th>Balance</th>
+    <th>Minimum Payment Due</th>
+  </tr>
+  <tr>
+    <td>{{ContractLetterName}}</td>
+    <td>£{{Balance}}</td>
+    <td>£{{min_due}}</td>
+  </tr>
+
+</table>
+
+<h2>Your current contact details:</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Pnone Number</th>
+    <th>Address</th>
+    <th>Postcode</th>
+  </tr>
+  <tr>
+    <td>{{Number}}</td>
+    <td>{{Address1}}</td>
+    <td>{{Postcode}}</td>
+  </tr>
+
+</table>
+
+
+</body>
+</html>
