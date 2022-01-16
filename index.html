@@ -7,7 +7,7 @@ table, th, td {
   table-layout: fixed ;
   width: 100%;
   text-align: center;
-  background-color: #0076C1;
+  background-color: #A9AAAE;
   font-size: 18px;
   padding-top: 0;
   padding-bottom 0;
@@ -26,12 +26,30 @@ table, th, td {
   <tr>
     <th>Our Client</th>
     <th>Balance</th>
-    <th>Minimum Payment Due</th>
+    <th>Minimum Payment Due</th>    
   </tr>
   <tr>
     <td>{{ContractLetterName}}</td>
     <td>£{{Balance}}</td>
-    <td>£{{min_due}}</td>
+    <td>£{{min_due}}</td>    
+  </tr>
+  
+</table>
+
+<h2 align="center" style="color:blue;">Your payment plan:</h2>
+
+<table style="width:100%">
+  <tr>
+    <th>Payment Plan Agreed</th>
+    <th>Payment Amount</th>
+    <th>Next Payment</th>
+    <th>On Track</th>
+  </tr>
+  <tr>
+    <td>{{PmtPln}}</td>>
+    <td>£{{PmtAmt}}</td>
+    <td>{{PaymentDue}}</td>
+    <td>{{Dflt}}</td>
   </tr>
 
 </table>
@@ -55,4 +73,3 @@ table, th, td {
 
 </body>
 </html>
-
